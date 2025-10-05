@@ -99,6 +99,14 @@ t2.from(".elem.line3.right", {
     duration: 1,
 }, "three")
 
+gsap.to(".elem2 img", {
+  y: 60,
+  duration: 4,
+  repeat: -1,
+  yoyo: true,
+  ease: "sine.inOut"
+});
+
 
 
 var t3 = gsap.timeline({
@@ -144,8 +152,8 @@ t3.from(".cta-illustration img", {
 
 
 gsap.to(".cta-illustration img", {
-  y: 20,
-  duration: 3,
+  y: 60,
+  duration: 2,
   repeat: -1,
   yoyo: true,
   ease: "sine.inOut"
