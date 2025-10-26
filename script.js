@@ -8,16 +8,10 @@ t1.from("nav h1,nav h4, nav button",{
     duration:0.6,
     stagger:0.2,
 })
-
-gsap.registerPlugin(SplitText);
-let split = SplitText.create(".centre-part1 h1",{
-    type:"chars,lines,words"
-})
-t1.from(split.chars,{
-    y:100,
-    autoAlpha:0,
-    stagger:0.05,
-    duration:0.3,
+t1.from(".centre-part1 h1",{
+    x:-500,
+    opacity:0,
+    duration:0.4,
 })
 
 t1.from(".centre-part1 p",{
